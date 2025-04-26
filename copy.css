@@ -1,0 +1,293 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    color: #333;
+    background-image: url('./gray_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+  }
+  header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  .header-left, .header-right {
+    display: flex;
+    gap: 1rem;
+  }
+  .header-left button, .header-right button {
+    background-color: #25b1d1;
+    border: none;
+    color: white;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+  .header-left button:hover, .header-right button:hover {
+    background-color: #25b2d1a8;
+    transform: scale(1.05);
+  }
+  .title {
+    text-align: center;
+    flex-grow: 1;
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+  nav {
+    background-color: #34495e;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  nav button {
+    background-color: #1abc9c;
+    border: none;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  nav button:hover {
+    background-color: #16a085;
+    transform: scale(1.05);
+  }
+  nav button.active {
+    background-color: #e67e22;
+    color: white;
+  }
+  .content {
+    padding: 5rem;
+    text-align: center;
+    min-height: 300px;
+    font-size: larger;
+  }
+  #welcome {
+    font-size: xx-large;
+    text-transform: uppercase;
+      background-image: linear-gradient(
+          -225deg,
+          #606b95 0%,
+          #38307a 25%,
+          #3f2664 50%,
+          #000000 80%
+      );
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: #00000009 3px -4px 5px;
+  }
+  #intro {
+    font-size: larger;
+    font-weight: 500;
+    color: #000000b6;
+  }
+  .upload-section {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffffcc;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+  .file-input {
+    display: none;
+  }
+  .file-label {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: #3498db;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    overflow: hidden;
+  }
+  
+  .file-label:hover {
+    background-color: #8e44ad;
+  }
+  .file-name {
+    margin-top: 0.5rem;
+    color: #414040;
+    font-size: medium;
+    font-style: italic;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .submit-btn {
+    margin-top: 1rem;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .submit-btn:hover {
+    background-color: #8e44ad;
+  }
+  
+  .ms-upload-section {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffffcc;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+  .ms-file-input {
+    display: none;
+  }
+  .ms-file-label {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: #3498db;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .ms-file-label:hover {
+    background-color: #8e44ad;
+  }
+  .ms-file-name {
+    margin-top: 0.5rem;
+    color: #414040;
+    font-size: medium;
+    font-style: italic;
+  }
+  .ms-submit-btn {
+    margin-top: 1rem;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .ms-submit-btn:hover {
+    background-color: #8e44ad;
+  }
+  
+  .bt-upload-section {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffffcc;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+  .bt-file-input {
+    display: none;
+  }
+  .bt-file-label {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: #3498db;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+  }
+  .bt-file-label:hover {
+    background-color: #8e44ad;
+  }
+  .bt-file-name {
+    margin-top: 0.5rem;
+    color: #414040;
+    font-size: medium;
+    font-style: italic;
+  }
+  .bt-submit-btn {
+    margin-top: 1rem;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .bt-submit-btn:hover {
+    background-color: #8e44ad;
+  }
+  
+  .bl-upload-section {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffffcc;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+  .bl-file-input {
+    display: none;
+  }
+  .bl-file-label {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: #3498db;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+  }
+  .bl-file-label:hover {
+    background-color: #8e44ad;
+  }
+  .bl-file-name {
+    margin-top: 0.5rem;
+    color: #414040;
+    font-size: medium;
+    font-style: italic;
+  }
+  .bl-submit-btn {
+    margin-top: 1rem;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .bl-submit-btn:hover {
+    background-color: #8e44ad;
+  }

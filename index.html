@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeuroNet</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-left">
+      <button onclick="alert('Login Page Coming Soon')">Login</button>
+      <button onclick="alert('Signup Page Coming Soon')">Sign Up</button>
+    </div>
+  
+    <div class="header-center">
+      AI-Powered Neurological Disease Diagnosis & Analysis
+    </div>
+  
+    <div class="header-right">
+      <button onclick="alert('Subscription Page Coming Soon')">Subscription</button>
+      <button onclick="showDisease('about', this)">About Us</button>
+    </div>
+  </header>
+  
+
+  <nav id="disease-nav">
+    <button onclick="showDisease('parkinson', this)">Parkinson's</button>
+    <button onclick="showDisease('ms', this)">Multiple Sclerosis</button>
+    <button onclick="showDisease('depression', this)">Depression</button>
+    <button onclick="showDisease('autism', this)">Autism</button>
+    <button onclick="showDisease('alzheimers', this)">Alzheimer's</button>
+    <button onclick="showDisease('brainTumor', this)">Brain Tumor</button>
+    <button onclick="showDisease('boneLoss', this)">Bone Loss</button>
+    <button onclick="showDisease('spineTumor', this)">Spinal Tumor</button>
+  </nav>
+
+  <main class="content" id="main-content">
+    <h2 id="welcome">Welcome to NeuroNet AI</h2>
+    <p id="intro">
+      Select a neurological disease from the list below to initiate an advanced diagnostic and analysis process powered by cutting-edge Artificial Intelligence. Our system leverages machine learning and deep neural networks to provide early, accurate, and accessible disease predictions, supporting medical professionals and improving patient outcomes.
+    </p>
+  </main>
+
+  <div id="about" hidden>
+    <h2>About Us</h2>
+    <p>
+      We are a team of AI researchers and medical professionals dedicated to revolutionizing neurological disease diagnosis using deep learning and intelligent systems. Our platform provides accessible, accurate and early detection tools for various neurological disorders.
+    </p>
+  </div>
+
+  <footer>
+    Powered By NeuroNet Team
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
